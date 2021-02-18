@@ -11,6 +11,7 @@ jobs:
   build_skim:
     runs-on: ubuntu-latest
     container: rootproject/root-conda:6.18.04
+    needs: hello1
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
